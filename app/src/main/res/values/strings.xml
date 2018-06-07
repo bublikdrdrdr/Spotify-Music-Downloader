@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Spotify Downloader</string>
+    <string name="terms">By accepting this terms of use you are answerable before the law and rules of Spotify (music service which in this case provide your playlists and tracks names) and zk.fm site, where these tracks are searched and downloaded from.
+     \nThe application and it\'s author don\'t do anything of: \n
+    *getting unauthorized access to Spotify service (all data is received using LoopJ async http library and Sporify API) \n
+    *recording, saving and sharing Spotify service data (especially music files) (only tracks names are copied and sent to zk.fm service) \n
+    *sharing or selling user authorization data (user authorises by himself using Sporify Authorization Api Library for Android) \n
+    The application does next things: \n
+    *authorizing user on Spotify \n
+    *getting list of user\'s playlists \n
+    *getting list of user\'s tracks \n
+    *copying track name and authors only \n
+    *searching items on zk.fm service using track name \n
+    *downloading track from zk.fm to your phone memory \n
+ \n
+    version 1.0 beta \n
+    Vadym Borys @bublik.drdrdr</string>
+    <string name="accept">Accept</string>
+    <string name="accept_terms_label">You have to read and accept app terms to use it</string>
+    <string name="downloadLabel">Download</string>
+    <string name="default_error_text">Default error text</string>
+    <string name="cancelLabel">Cancel</string>
+    <string name="pauseLabel">Pause</string>
+    <string name="playLabel">Play</string>
+    <string name="defaultTrackName">Default Track Name - Artist, Second Artists</string>
+    <string name="copyLabel">Copy</string>
+    <string name="defaultPlaylistName">Default playlist name</string>
+</resources>

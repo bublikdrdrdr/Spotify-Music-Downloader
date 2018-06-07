@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3f51b5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#efab00</color>
+
+    <color name="progressDownload">@color/colorAccent</color>
+    <color name="progressPause">#BCBCBC</color>
+    <color name="progressError">#E52222</color>
+    <color name="progressDone">#20D820</color>
+</resources>

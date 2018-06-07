@@ -1,0 +1,58 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'bublik.drdrdr'
+            keyPassword 'PrzeBublikGoogle3'
+            storeFile file('C:/Users/Bublik/Google Drive/Projects/AndroidKey/keystore.jks')
+            storePassword 'PrzeBublikGoogle3'
+        }
+    }
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "tk.ubublik.spotifydownloader"
+        vectorDrawables.useSupportLibrary = true
+        minSdkVersion 19
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.config
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    buildToolsVersion '27.0.3'
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    productFlavors {
+    }
+}
+
+ext {
+    sdkVersion = '27.1.1'
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //noinspection GradleCompatible
+    implementation "com.android.support:appcompat-v7:${sdkVersion}"
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    implementation 'org.jsoup:jsoup:1.7.2'
+    /*implementation "org.projectlombok:lombok:1.16.22"
+        annotationProcessor 'org.projectlombok:lombok:1.16.22'*/
+    implementation 'com.loopj.android:android-async-http:1.4.9'
+    implementation 'com.spotify.android:auth:1.0.0-alpha'
+    implementation 'commons-io:commons-io:2.6'
+    implementation 'commons-net:commons-net:3.6'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation "com.android.support:recyclerview-v7:${sdkVersion}"
+}

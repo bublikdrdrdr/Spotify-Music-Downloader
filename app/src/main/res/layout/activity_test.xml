@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.TestActivity">
+
+    <Button
+        android:id="@+id/resetTermsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="reset terms" />
+    <Button
+        android:id="@+id/restartAppButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="restart app" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="login" />
+
+    <Button
+        android:id="@+id/getNameButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="get my name" />
+
+    <Button
+        android:id="@+id/getPlaylists"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="get playlists" />
+
+    <EditText
+        android:id="@+id/playlistIdEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="playlist id"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/getPlaylistSongs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="get playlist songs" />
+
+    <Button
+        android:id="@+id/getAllSongs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="get all songs" />
+
+    <Button
+        android:id="@+id/searchZkSongs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="search zk songs" />
+</LinearLayout>
